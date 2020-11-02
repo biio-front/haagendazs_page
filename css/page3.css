@@ -1,0 +1,164 @@
+.page3 {
+  display: grid;
+  grid-template-columns: 69.289% 1px 30%;
+}
+
+.page3__ad {
+  text-align: center;
+  padding: 100px 4.88% 100px 4.88%;
+  font-family: Adobe 명조 Std, 명조;
+}
+.page3__title_ad {
+  font-size: var(--font-big);
+  line-height: 1.5em;
+  color: var(--color-main);
+  margin-bottom: 38px;
+}
+.page3__contents_ad {
+  line-height: 1.2em;
+  color: var(--color-light_main);
+}
+.page3__contents_ad .block1 {
+  display: block;
+}
+.page3__menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 17px auto;
+  max-width: 662.6px;
+}
+.page3__menu img {
+  width: 150px;
+  height: 150px;
+}
+.page3__line {
+  margin-top: 140px;
+  height: 300px;
+  background: var(--color-grey);
+}
+
+@media screen and (max-width: 995px) {
+  .page3__menu {
+    width: 330px;
+  }
+  .page3__menu img:nth-child(1) {
+    margin-bottom: 15px;
+  }
+  .page3__line {
+    height: 480px;
+  }
+  .page3__contents_ad .block0 {
+    display: block;
+  }
+}
+
+.page3__store {
+  margin-top: 60px;
+  padding: 0 4.88%;
+}
+.find_store input,
+.find_store button {
+  width: 90%;
+  padding: 5px 10px;
+  border: 1px solid var(--color-light_main);
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: var(--color-white);
+  color: var(--color-dark-grey);
+  text-align: start;
+}
+
+/* page3__store 추가 */
+.shop_name a,
+h4 {
+  color: #666;
+}
+
+.shop_name {
+  width: 90%;
+  background: var(--color-white);
+  display: flex;
+}
+.shop_name div {
+  padding: 10px 20px;
+  display: none;
+}
+.shop_name h4 p:last-child {
+  margin-bottom: 5px;
+}
+
+.map_wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+}
+#map {
+  width: 90%;
+  height: 100%;
+}
+
+.shop_detail > div {
+  display: none;
+  padding-top: 10px;
+}
+.shop_detail > div:nth-child(1) {
+  display: block;
+}
+.shop_detail > div h5 {
+  margin-top: 10px;
+}
+.shop_detail > div p {
+  padding-left: 10px;
+  border-left: 1px solid var(--color-grey);
+}
+
+@media screen and (max-width: 768px) {
+  .page3__contents_ad .block1 {
+    display: inline;
+  }
+  .page3__contents_ad .block2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px), (orientation: portrait) {
+  .page3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page3__ad {
+    padding-bottom: 50px;
+  }
+
+  .page3__line {
+    display: none;
+  }
+
+  .page3__store {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  .find_store input,
+  .shop_name,
+  #map {
+    width: 280px;
+  }
+  .shop_name,
+  #map {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page3__menu {
+    width: 250px;
+  }
+  .page3__menu img {
+    width: 120px;
+    height: 120px;
+  }
+}
