@@ -45,8 +45,10 @@ body {
   background-color: #f3f3f3ee;
   font-family: 나눔바른고딕;
   font-weight: 100;
-}
 
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 body::-webkit-scrollbar {
   display: none;
 }
@@ -127,10 +129,12 @@ header {
 }
 
 .menu_bar__bg {
+  width: 100%;
   height: 88px;
   background-color: var(--color-main);
-  position: relative;
-  top: -88px;
+  position: absolute;
+  top: 72px;
+  left: 0;
   z-index: -1;
 }
 
@@ -157,7 +161,11 @@ main > section {
   header {
     position: relative;
   }
-
+  .header_top__bg1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   .header_top__logo {
     position: relative;
     z-index: 0;
@@ -171,6 +179,11 @@ main > section {
     top: 0;
     left: -100%;
     /* left: -100%; */
+  }
+
+  .menu_bar.on,
+  .menu_bar__bg.on {
+    left: 0;
   }
 
   .menu_bar {

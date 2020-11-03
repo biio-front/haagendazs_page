@@ -54,10 +54,11 @@
 }
 
 .page3__store {
+  width: 100%;
+  position: relative;
   margin-top: 60px;
   padding: 0 4.88%;
 }
-.find_store input,
 .find_store button {
   width: 90%;
   padding: 5px 10px;
@@ -69,22 +70,22 @@
   text-align: start;
 }
 
-/* page3__store 추가 */
-.shop_name a,
+.store_name a,
 h4 {
   color: #666;
 }
-
-.shop_name {
+.store_name {
   width: 90%;
   background: var(--color-white);
   display: flex;
+  position: absolute;
+  z-index: 200;
 }
-.shop_name div {
+.store_name div {
   padding: 10px 20px;
   display: none;
 }
-.shop_name h4 p:last-child {
+.store_name h4 p:last-child {
   margin-bottom: 5px;
 }
 
@@ -100,17 +101,17 @@ h4 {
   height: 100%;
 }
 
-.shop_detail > div {
+.store_detail > div {
   display: none;
   padding-top: 10px;
 }
-.shop_detail > div:nth-child(1) {
+.store_detail > div.on {
   display: block;
 }
-.shop_detail > div h5 {
+.store_detail > div h5 {
   margin-top: 10px;
 }
-.shop_detail > div p {
+.store_detail > div p {
   padding-left: 10px;
   border-left: 1px solid var(--color-grey);
 }
@@ -143,14 +144,20 @@ h4 {
     text-align: center;
     padding-bottom: 100px;
   }
-  .find_store input,
-  .shop_name,
+  .find_store button,
+  .store_name,
   #map {
     width: 280px;
-  }
-  .shop_name,
-  #map {
     margin: 0 auto;
+  }
+  .store_name {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .store_detail div {
+    width: 260px;
+    margin: 0 auto;
+    text-align: start;
   }
 }
 @media screen and (max-width: 480px) {
