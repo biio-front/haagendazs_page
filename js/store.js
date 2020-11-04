@@ -1,6 +1,6 @@
 // Json에서 매장정보 가져오기
 function loadStore() {
-  return fetch("../data/storeInfo.json")
+  return fetch("https://biio-front.github.io/haagendazs_page/data/storeInfo.json")
     .then(response => response.json())
     .then(json => json.storeInfo);
 }
