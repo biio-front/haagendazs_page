@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/mobile.js"></script>
+    <script defer src="js/store.js"></script>
   </head>
   <body>
     <header>
@@ -168,24 +169,24 @@
             <div class="store_name">
               <div>
                 <h4>서울</h4>
-                 <p><a href="#" class="seocho">서초점</a></p>
-                 <p><a href="#" class="yeoido">여의도점</a></p>
-                 <p><a href="#" class="kyodae">교대점</a></p>
-                 <p><a href="#" class="dogok">도곡점</a></p>
-                 <p><a href="#" class="sadang">사당 DV점</a></p>
+                 <p><a href="#" class="seocho" data-value="seocho">서초점</a></p>
+                 <p><a href="#" class="yeoido" data-value="yeoido">여의도점</a></p>
+                 <p><a href="#" class="kyodae" data-value="kyodae">교대점</a></p>
+                 <p><a href="#" class="dogok" data-value="dogok">도곡점</a></p>
+                 <p><a href="#" class="sadang" data-value="sadang">사당 DV점</a></p>
                 <h4>경기</h4>
-                 <p><a href="#" class="bundang">분당미금점</a></p>
-                 <p><a href="#" class="pankyo">판교점</a></p>
-                 <p><a href="#" class="ajouUniversityHospital">아주대병원점</a></p>
+                 <p><a href="#" class="bundang" data-value="bundang">분당미금점</a></p>
+                 <p><a href="#" class="pankyo" data-value="pankyo">판교점</a></p>
+                 <p><a href="#" class="ajouUniversityHospital" data-value="ajouUniversityHospital">아주대병원점</a></p>
               </div>
               <div>
                 <h4>대구</h4>
-                 <p><a href="#" class="shinsegae">신세계점</a></p>
+                 <p><a href="#" class="shinsegae" data-value="shinsegae">신세계점</a></p>
                 <h4>경남</h4>
-                 <p><a href="#" class="yangsan">양산점</a></p>
+                 <p><a href="#" class="yangsan" data-value="yangsan">양산점</a></p>
                 <h4>부산</h4>
-                 <p><a href="#" class="marineCity">마린시티점</a></p>
-                 <p><a href="#" class="yonghoXii">용호자이점</a></p>
+                 <p><a href="#" class="marineCity" data-value="marineCity">마린시티점</a></p>
+                 <p><a href="#" class="yonghoXii" data-value="yonghoXii">용호자이점</a></p>
               </div>
             </div>
           </div>
@@ -196,119 +197,7 @@
             <script src="js/map.js"></script>
           </div>
 
-          <div class="store_detail">
-            <div class="seocho_detail on">
-              <h4>하겐다즈 서초점</h4>
-              <div>
-                <h5>주소</h5>
-                <p>서울 서초구 서초대로38길 12</p>
-                <h5>영업시간</h5>
-                <p>평일 : 09:00 - 22:00</p>
-                <p>주말·공휴일 : 10:00 - 22:00</p>
-              </div>
-            </div>
-            <div class="yeoido_detail">
-              <div>
-                <h4>하겐다즈 여의도점</h4>
-                <h5>주소</h5>
-                <p>서울 영등포구 의사당대로 108 아일렉스 상가</p>
-                <h5>영업시간</h5>
-                <p>평일 : 10:00 - 23:00</p>
-                <p>토요일 : 11:00 - 23:00</p>
-                <p>일요일 : 12:00 - 22:00</p>
-              </div>
-            </div>
-            <div class="kyodae_detail">
-              <div>
-                <h4>하겐다즈 교대점</h4>
-                <h5>주소</h5>
-                <p>서울 서초구 서초중앙로 188 아크로비스타아케이드 로비층 114호</p>
-                <h5>영업시간</h5>
-                <p>매일 : 09:00 - 22:00</p>
-              </div>
-            </div>
-            <div class="dogok_detail">
-              <div>
-                <h4>하겐다즈 도곡점</h4>
-                <h5>주소</h5>
-                <p>서울 강남구 언주로30길 56 타워팰리스</p>
-                <h5>영업시간</h5>
-                <p>매일 : 10:00 - 22:00</p>
-              </div>
-            </div>
-            <div class="sadang_detail">
-              <div>
-                <h4>하겐다즈 사당 DV점</h4>
-                <h5>주소</h5>
-                <p>서울 동작구 사당로16길 85</p>
-              </div>
-            </div>
-            <div class="bundang_detail">
-              <div>
-                <h4>하겐다즈 분당미금점</h4>
-                <h5>주소</h5>
-                <p>경기 성남시 분당구 돌마로 43 메디파크빌딩</p>
-                <h5>영업시간</h5>
-                <p>매일 : 10:00 - 24:00</p>
-              </div>
-            </div>
-            <div class="pankyo_detail">
-              <div>
-                <h4>하겐다즈 판교점</h4>
-                <h5>주소</h5>
-                <p>경기 성남시 분당구 분당내곡로 117 1층 101-3호</p>
-                <h5>영업시간</h5>
-                <p>매일 : 10:00 - 22:30</p>
-              </div>
-            </div>
-            <div class="ajouUniversityHospital_detail">
-              <div>
-                <h4>하겐다즈 아주대병원점</h4>
-                <h5>주소</h5>
-                <p>경기 수원시 영통구 월드컵로 164 본관 지하1층</p>
-                <h5>영업시간</h5>
-                <p>평일 : 07:30 - 22:00</p>
-                <p>주말 : 08:00 - 22:00</p>
-                <p class="small">Last order : 19:30</p>
-              </div>
-            </div>
-            <div class="shinsegae_detail">
-              <div>
-                <h4>하겐다즈 대구신세계점</h4>
-                <h5>주소</h5>
-                <p>경기 성남시 분당구 분당내곡로 117 1층 101-3호</p>
-                <h5>영업시간</h5>
-                <p>매일 : 10:00 - 22:30</p>
-              </div>
-            </div>
-            <div class="yangsan_detail">
-              <div>
-                <h4>하겐다즈 양산점</h4>
-                <h5>주소</h5>
-                <p>경남 양산시 물금읍 화합11길 22 대우부동산</p>
-                <h5>영업시간</h5>
-                <p>매일 : 10:30 - 23:00</p>
-              </div>
-            </div>
-            <div class="marineCity_detail">
-              <div>
-                <h4>하겐다즈 마린시티점</h4>
-                <h5>주소</h5>
-                <p>부산 해운대구 마린시티2로 38 아이파크상가동 T3 103호</p>
-                <h5>영업시간</h5>
-                <p>매일 : 10:00 - 23:00</p>
-                <p class="small">Last order : 22:50</p>
-              </div>
-            </div>
-            <div class="yonghoXii_detail">
-              <div>
-                <h4>하겐다즈 용호자이점</h4>
-                <h5>주소</h5>
-                <p>부산 남구 신선로 566 GS하이츠자이</p>
-                <h5>영업시간</h5>
-                <p>매일 : 10:00 - 23:00</p>
-              </div>
-            </div>
+          <div class="store_info">
           </div>
         </div>
 

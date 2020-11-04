@@ -1,0 +1,117 @@
+{
+  "storeInfo": [
+    {
+      "id": 0,
+      "class": "seocho on",
+      "place": "서초점",
+      "address": "서울 서초구 서초대로38길 12",
+      "openingHours": [
+          "평일 : 09:00 - 22:00", 
+          "주말·공휴일 : 10:00 - 22:00"
+        ]
+    },
+    {
+      "id": 1,
+      "class": "yeoido",
+      "place": "여의도점",
+      "address": "서울 영등포구 의사당대로 108 아일렉스 상가",
+      "openingHours": [
+          "평일 : 10:00 - 23:00", 
+          "토요일 : 11:00 - 23:00",
+          "일요일 : 12:00 - 22:00"
+        ]
+    },
+    {
+      "id": 2,
+      "class": "kyodae",
+      "place": "교대점",
+      "address": "서울 서초구 서초중앙로 188 아크로비스타아케이드 로비층 114호",
+      "openingHours": [
+          "매일 : 09:00 - 22:00"
+        ]
+    },
+    {
+      "id": 3,
+      "class": "dogok",
+      "place": "도곡점",
+      "address": "서울 강남구 언주로30길 56 타워팰리스",
+      "openingHours": [
+        "매일 : 09:00 - 22:00"
+        ]
+    },
+    {
+      "id": 4,
+      "class": "sadang",
+      "place": "사당 DV점",
+      "address": "서울 동작구 사당로16길 85",
+      "openingHours": [
+        ]
+    },
+    {
+      "id": 5,
+      "class": "bundang",
+      "place": "분당미금점",
+      "address": "경기 성남시 분당구 돌마로 43 메디파크빌딩",
+      "openingHours": [
+          "매일 : 10:00 - 24:00"
+        ]
+    },
+    {
+      "id": 6,
+      "class": "pankyo",
+      "place": "판교점",
+      "address": "경기 성남시 분당구 분당내곡로 117 1층 101-3호",
+      "openingHours": [
+          "매일 : 10:00 - 22:30"
+        ]
+    },
+    {
+      "id": 7,
+      "class": "ajouUniversityHospital",
+      "place": "아주대병원점",
+      "address": "경기 수원시 영통구 월드컵로 164 본관 지하1층",
+      "openingHours": [
+          "평일 : 07:30 - 22:00", 
+          "주말 : 08:00 - 22:00",
+          "Last order : 19:30"
+        ]
+    },
+    {
+      "id": 8,
+      "class": "shinsegae",
+      "place": "대구신세계점",
+      "address": "대구 동구 동부로 149",
+      "openingHours": [
+          "매일 : 10:00 - 22:30"
+        ]
+    },
+    {
+      "id": 9,
+      "class": "yangsan",
+      "place": "양산점",
+      "address": "경남 양산시 물금읍 화합11길 22 대우부동산",
+      "openingHours": [
+          "매일 : 10:30 - 23:00"
+        ]
+    },
+    {
+      "id": 10,
+      "class": "marineCity",
+      "place": "마린시티점",
+      "address": "부산 해운대구 마린시티2로 38 아이파크상가동 T3 103호",
+      "openingHours": [
+          "매일 : 10:00 - 23:00", 
+          "Last order : 22:50"
+        ]
+    },
+    {
+      "id": 11,
+      "class": "yonghoXii",
+      "place": "용호자이점",
+      "address": "부산 남구 신선로 566 GS하이츠자이",
+      "openingHours": [
+          "매일 : 10:00 - 23:00"
+        ]
+    }
+  ]
+}
