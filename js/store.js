@@ -1,6 +1,8 @@
 // Json에서 매장정보 가져오기
 function loadStore() {
-  return fetch("https://biio-front.github.io/haagendazs_page/data/storeInfo.json")
+  return fetch(
+    "https://biio-front.github.io/haagendazs_page/data/storeInfo.json"
+  )
     .then(response => response.json())
     .then(json => json.storeInfo);
 }
@@ -13,10 +15,7 @@ function createHTML(storeInfo) {
                 <h5>주소</h5>
                 <p>${storeInfo.address}</p>
                 <h5>영업시간</h5>
-                ${
-                    storeInfo.openingHours
-                    .map(time => `<p>${time}</p>`).join('')
-                }
+                ${storeInfo.openingHours.map(time => `<p>${time}</p>`).join("")}
             </div>
         </div>`;
 }
@@ -29,26 +28,26 @@ function displayStoreInfo(storeInfo) {
 }
 
 function storeInfoON(e) {
-    const target = e.target.dataset.value;
-    const information = document.querySelectorAll('.store_info > div');
+  const target = e.target.dataset.value;
+  const information = document.querySelectorAll(".store_info > div");
 
-    e.preventDefault();
-    if(target == null) return;
-    [].forEach.call(information, info => {
-        if(info.classList.contains(target)) {
-            info.classList.add('on');
-        } else {
-            info.classList.remove('on');
-        }
-    })
+  e.preventDefault();
+  if (target == null) return;
+  [].forEach.call(information, info => {
+    if (info.classList.contains(target)) {
+      info.classList.add("on");
+    } else {
+      info.classList.remove("on");
+    }
+  });
 }
 
 function init() {
-    const sotreList = document.querySelector('.store_name');
+  const sotreList = document.querySelector(".store_name");
 
-    loadStore().then(storeInfo => {
-      displayStoreInfo(storeInfo);
-    });
-    sotreList.addEventListener('click', e => storeInfoON(e));
+  loadStore().then(storeInfo => {
+    displayStoreInfo(storeInfo);
+  });
+  sotreList.addEventListener("click", e => storeInfoON(e));
 }
 init();
